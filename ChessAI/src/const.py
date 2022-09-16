@@ -1,7 +1,7 @@
-# Starting off!
+# Screen dimensions
 WIDTH = 800
 HEIGHT = 800
 
-# Dimensions
+# Board Dimensions
 ROWS = 8
 COLS = 8
