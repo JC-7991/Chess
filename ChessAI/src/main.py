@@ -12,7 +12,10 @@ class Main:
         pygame.display.set_caption('Chess')
 
     def mainloop(self):
-        pass
+        while True:
+            for event in pygame.events.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
 
 main = Main()
 main.mainloop()
