@@ -1,9 +1,9 @@
 # Main file
 class Main:
     def __init__(self):
-        pass
+        print("Hello")
     def mainloop(self):
-        pass
+        print("World!")
 
 main = Main()
 main.mainloop()
