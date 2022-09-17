@@ -1,6 +1,8 @@
 import pygame
 import sys
 
+from const import *
+
 # Main file
 class Main:
     def __init__(self):
