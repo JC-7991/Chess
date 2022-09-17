@@ -4,3 +4,6 @@ class Main:
         pass
     def mainloop(self):
         pass
+
+main = Main()
+main.mainloop()
