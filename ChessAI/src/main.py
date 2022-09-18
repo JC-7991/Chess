@@ -16,6 +16,7 @@ class Main:
             for event in pygame.events.get():
                 if event.type == pygame.QUIT:
                     pygame.quit()
+                    sys.exit()
 
 main = Main()
 main.mainloop()
