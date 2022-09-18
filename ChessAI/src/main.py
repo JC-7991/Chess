@@ -11,6 +11,7 @@ class Main:
         self.screen = pygame.display.set_mode((WIDTH, HEIGHT))
         pygame.display.set_caption('Chess')
 
+    # Loop through all events and check if the user quits the game.
     def mainloop(self):
         while True:
             for event in pygame.events.get():
