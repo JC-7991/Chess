@@ -16,6 +16,7 @@ class Main:
     # Loop through all events and check if the user quits the game.
     def mainloop(self):
         while True:
+            self.game.show_bg()
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     pygame.quit()
