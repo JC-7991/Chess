@@ -4,7 +4,6 @@ import sys
 from const import *
 from game import Game
 
-# Main file
 class Main:
 
     def __init__(self):
@@ -21,7 +20,7 @@ class Main:
                 if event.type == pygame.QUIT:
                     pygame.quit()
                     sys.exit()
-        pygame.display.update()
+            pygame.display.update()
 
 main = Main()
 main.mainloop()
