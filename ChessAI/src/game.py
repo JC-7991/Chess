@@ -12,3 +12,5 @@ class Game:
             for col in range(COLS):
                 if(row + col) % 2 == 0:
                     color = (234, 235, 200)
+                else:
+                    color = (119, 154, 88)
