@@ -2,6 +2,7 @@ import pygame
 import sys
 
 from const import *
+from game import Game
 
 # Main file
 class Main:
@@ -10,6 +11,7 @@ class Main:
         pygame.init()
         self.screen = pygame.display.set_mode((WIDTH, HEIGHT))
         pygame.display.set_caption('Chess')
+        self.game = Game()
 
     # Loop through all events and check if the user quits the game.
     def mainloop(self):
