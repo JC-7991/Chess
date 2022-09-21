@@ -1,4 +1,6 @@
 class Square:
 
     def __init__(self, row, col, piece = None):
-        pass
+        self.row = row
+        self.col = col
+        self.piece = piece
