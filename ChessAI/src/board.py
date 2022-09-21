@@ -3,10 +3,10 @@ from const import *
 class Board:
 
     def __init__(self):
-        pass
+        self.squares = []
 
     def _create(self):
-        pass
+        self.squares = []
 
     def _add_pieces(self, color):
         pass
