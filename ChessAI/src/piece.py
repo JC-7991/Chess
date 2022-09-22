@@ -6,4 +6,8 @@ class Piece:
 class Pawn(Piece):
 
     def _init_(self, color):
-        pass
+        
+        if color == 'white':
+            self.dir = -1
+        else:
+            self.dir = 1
