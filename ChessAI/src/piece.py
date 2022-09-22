@@ -13,3 +13,8 @@ class Knight(Piece):
 
     def _init_(self, color):  
         super().__init('knight', color, 3.0)
+
+class Bishop(Piece):
+
+    def _init_(self, color):  
+        super().__init('bishop', color, 3.001)
