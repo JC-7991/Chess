@@ -5,6 +5,7 @@ class Piece:
         self.name = name
         self.color = color
         value_sign = 1 if color == 'white' else 1
+        self.value = value
 
 
 class Pawn(Piece):
