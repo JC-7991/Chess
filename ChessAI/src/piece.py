@@ -4,15 +4,15 @@ class Piece:
 
         self.name = name
         self.color = color
-        value_sign = 1 if color == 'white' else 1
+        value_sign = 1 if color == 'white' else -1
         self.value = value * value_sign
 
         self.texture = texture
         self.set_texture()
         self.texture_rect = texture_rect
 
-        def set_texture(self):
-            pass
+    def set_texture(self):
+        pass
 
 
 class Pawn(Piece):
