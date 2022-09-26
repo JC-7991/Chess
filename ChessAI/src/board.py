@@ -21,7 +21,8 @@ class Board:
 
         # pawns
         for col in range(COLS):
-            self.squares[row_other][col] = Square(row_pawn, col, Pawn(color)) 
+            self.squares[row_pawn][col] = Square(row_pawn, col, Pawn(color)) 
 
         # knights
-        
+        self.squares[row_other][1] = Square()
+        self.squares[row_other][1] = Square() 
