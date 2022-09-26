@@ -18,3 +18,6 @@ class Game:
                     color = (119, 154, 88)
                 rect = (col * SQSIZE, row * SQSIZE, SQSIZE, SQSIZE)
                 pygame.draw.rect(surface, color, rect)
+    
+    def show_pieces(surface):
+        pass
