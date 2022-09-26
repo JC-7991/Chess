@@ -19,4 +19,4 @@ class Board:
 
         row_pawn, row_other = (6, 7) if color == 'white' else (1, 0)
         for col in range(COLS):
-            self.squares[row_other][col] = Square(row_pawn, col, ) 
+            self.squares[row_other][col] = Square(row_pawn, col, Pawn(color)) 
