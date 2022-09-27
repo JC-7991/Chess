@@ -21,10 +21,16 @@ class Main:
 
             game.show_bg(screen)
             game.show_pieces(screen)
+
             for event in pygame.event.get():
+
+                if event.type == pygame.MOUSEBUTTONDOWN:
+                    pass
+
                 if event.type == pygame.QUIT:
                     pygame.quit()
                     sys.exit()
+
             pygame.display.update()
 
 main = Main()
