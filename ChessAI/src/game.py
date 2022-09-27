@@ -25,4 +25,4 @@ class Game:
         for row in range(ROWS):
             for col in range(COLS):
                 if self.board.squares[row][col].has_piece():
-                    pass
+                    piece = self.board.squares[row][col].piece
