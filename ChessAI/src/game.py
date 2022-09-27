@@ -1,10 +1,11 @@
 import pygame
 from const import *
+from board import Board
 
 class Game:
 
     def __init__(self):
-        pass
+        self.board = Board()
 
     def show_bg(self, surface):
 
@@ -20,4 +21,7 @@ class Game:
                 pygame.draw.rect(surface, color, rect)
     
     def show_pieces(surface):
-        pass
+
+        for row in range(ROWS):
+            for col in range(COLS):
+                if self.board.squares[row][col].has_piece():
