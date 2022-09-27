@@ -20,8 +20,9 @@ class Game:
                 rect = (col * SQSIZE, row * SQSIZE, SQSIZE, SQSIZE)
                 pygame.draw.rect(surface, color, rect)
     
-    def show_pieces(surface):
+    def show_pieces(self, surface):
 
         for row in range(ROWS):
             for col in range(COLS):
                 if self.board.squares[row][col].has_piece():
+                    pass
