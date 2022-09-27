@@ -26,3 +26,4 @@ class Game:
             for col in range(COLS):
                 if self.board.squares[row][col].has_piece():
                     piece = self.board.squares[row][col].piece
+                    img = pygame.image.load(piece.texture)
