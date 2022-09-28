@@ -16,6 +16,7 @@ class Main:
 
         game = self.game
         screen = self.screen
+        dragger = self.game.dragger
 
         while True:
 
