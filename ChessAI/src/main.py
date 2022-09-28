@@ -27,6 +27,9 @@ class Main:
                 if event.type == pygame.MOUSEBUTTONDOWN:
                     pass
 
+                elif event.type == pygame.MOUSEMOTION:
+                    pass
+
                 if event.type == pygame.QUIT:
                     pygame.quit()
                     sys.exit()
