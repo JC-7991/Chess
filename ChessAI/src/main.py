@@ -27,7 +27,8 @@ class Main:
 
                 if event.type == pygame.MOUSEBUTTONDOWN:
                     dragger.update_mouse(event.pos)
-                    clicked_row = dragger.mouseX // SQSIZE
+                    clicked_row = dragger.mouseY // SQSIZE
+                    clicked_col = dragger.mouseX // SQSIZE
 
                 elif event.type == pygame.MOUSEMOTION:
                     pass
