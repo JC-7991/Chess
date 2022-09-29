@@ -26,7 +26,7 @@ class Main:
             for event in pygame.event.get():
 
                 if event.type == pygame.MOUSEBUTTONDOWN:
-                    pass
+                    dragger.update_mouse(event.pos)
 
                 elif event.type == pygame.MOUSEMOTION:
                     pass
