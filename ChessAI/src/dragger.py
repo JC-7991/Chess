@@ -7,6 +7,6 @@ class Dragger:
         self.mouseX = 0
         self.mouseY = 0
 
-    def update_mouse(self):
-        pass
+    def update_mouse(self, pos):
+        self.mouseX, self.mouseY = pos
 
