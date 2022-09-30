@@ -27,9 +27,13 @@ class Main:
             for event in pygame.event.get():
 
                 if event.type == pygame.MOUSEBUTTONDOWN:
+
                     dragger.update_mouse(event.pos)
                     clicked_row = dragger.mouseY // SQSIZE
                     clicked_col = dragger.mouseX // SQSIZE
+
+                    if board.squares[clicked_row][clicked_col].has_piece():
+                        pass
 
                 elif event.type == pygame.MOUSEMOTION:
                     pass
