@@ -32,9 +32,6 @@ class Main:
                     clicked_row = dragger.mouseY // SQSIZE
                     clicked_col = dragger.mouseX // SQSIZE
 
-                    #print(dragger.mouseY, clicked_row)
-                    #print(dragger.mouseX, clicked_col)
-
                     if board.squares[clicked_row][clicked_col].has_piece():
                         piece = board.squares[clicked_row][clicked_col].piece
 
