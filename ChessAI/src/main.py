@@ -37,6 +37,7 @@ class Main:
 
                     if board.squares[clicked_row][clicked_col].has_piece():
                         pass
+                    
 
                 elif event.type == pygame.MOUSEMOTION:
                     pass
