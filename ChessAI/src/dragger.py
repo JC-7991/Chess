@@ -10,3 +10,6 @@ class Dragger:
     def update_mouse(self, pos):
         self.mouseX, self.mouseY = pos
 
+    def save_initial(self, pos):
+        pass
+
