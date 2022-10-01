@@ -4,7 +4,7 @@ from const import *
 class Dragger:
 
     def __init__(self):
-        
+
         self.mouseX = 0
         self.mouseY = 0
         self.initial_row = 0
@@ -14,5 +14,6 @@ class Dragger:
         self.mouseX, self.mouseY = pos
 
     def save_initial(self, pos):
-        pass
+        self.initial_row = pos[1]
+        
 
