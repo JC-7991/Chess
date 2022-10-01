@@ -5,6 +5,7 @@ class Dragger:
 
     def __init__(self):
 
+        self.piece = None
         self.mouseX = 0
         self.mouseY = 0
         self.initial_row = 0
