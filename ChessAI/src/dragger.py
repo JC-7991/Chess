@@ -8,6 +8,7 @@ class Dragger:
         self.piece = None
         self.mouseX = 0
         self.mouseY = 0
+        
         self.initial_row = 0
         self.initial_col = 0
 
