@@ -16,6 +16,7 @@ class Dragger:
 
     def update_blit(self, surface):
         self.piece.set_texture(size = 128)
+        img = pygame.image.load()
 
     def update_mouse(self, pos):
         self.mouseX, self.mouseY = pos
