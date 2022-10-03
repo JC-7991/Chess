@@ -18,9 +18,9 @@ class Dragger:
 
         self.piece.set_texture(size = 128)
         texture = self.piece.texture
-        
+
         img = pygame.image.load(texture)
-        img_center = 
+        img_center = (self.mouseX, self.mouseY)
 
     def update_mouse(self, pos):
         self.mouseX, self.mouseY = pos
