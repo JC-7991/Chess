@@ -40,7 +40,7 @@ class Main:
 
                 elif event.type == pygame.MOUSEMOTION:
                     if dragger.dragging:
-                        pass
+                        dragger.update_blit(screen)
 
                 elif event.type == pygame.MOUSEBUTTONUP:
                     pass
