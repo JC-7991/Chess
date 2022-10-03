@@ -15,7 +15,7 @@ class Dragger:
         self.initial_col = 0
 
     def update_blit(self, surface):
-        pass
+        self.piece.set_texture(size = 128)
 
     def update_mouse(self, pos):
         self.mouseX, self.mouseY = pos
