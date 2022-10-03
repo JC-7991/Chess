@@ -39,7 +39,8 @@ class Main:
                         dragger.drag_piece(piece)
 
                 elif event.type == pygame.MOUSEMOTION:
-                    pass
+                    if dragger.dragging:
+                        pass
 
                 elif event.type == pygame.MOUSEBUTTONUP:
                     pass
