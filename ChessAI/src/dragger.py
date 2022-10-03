@@ -14,6 +14,9 @@ class Dragger:
         self.initial_row = 0
         self.initial_col = 0
 
+    def update_blit(self, surface):
+        pass
+
     def update_mouse(self, pos):
         self.mouseX, self.mouseY = pos
 
