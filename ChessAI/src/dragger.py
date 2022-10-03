@@ -1,5 +1,6 @@
 import pygame
 from const import *
+from piece import *
 
 class Dragger:
 
