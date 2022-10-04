@@ -44,7 +44,7 @@ class Main:
                         dragger.update_blit(screen)
 
                 elif event.type == pygame.MOUSEBUTTONUP:
-                    pass
+                    dragger.undrag_piece()
 
                 elif event.type == pygame.QUIT:
                     pygame.quit()
