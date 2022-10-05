@@ -16,6 +16,17 @@ class Board:
         if isinstance(piece, Pawn):
             pass
 
+        elif isinstance(piece, Knight):
+            pass
+        elif isinstance(piece, Knight):
+            pass
+        elif isinstance(piece, Knight):
+            pass
+        elif isinstance(piece, Knight):
+            pass
+        elif isinstance(piece, Knight):
+            pass
+
     def _create(self):
 
         for row in range(ROWS):
