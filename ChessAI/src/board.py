@@ -18,12 +18,16 @@ class Board:
 
         elif isinstance(piece, Knight):
             pass
+
         elif isinstance(piece, Knight):
             pass
+
         elif isinstance(piece, Knight):
             pass
+
         elif isinstance(piece, Knight):
             pass
+        
         elif isinstance(piece, Knight):
             pass
 
