@@ -22,13 +22,13 @@ class Board:
         elif isinstance(piece, Bishop):
             pass
 
-        elif isinstance(piece, Knight):
+        elif isinstance(piece, Rook):
             pass
 
-        elif isinstance(piece, Knight):
+        elif isinstance(piece, Queen):
             pass
 
-        elif isinstance(piece, Knight):
+        elif isinstance(piece, King):
             pass
 
     def _create(self):
