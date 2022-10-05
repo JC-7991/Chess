@@ -19,7 +19,7 @@ class Board:
         elif isinstance(piece, Knight):
             pass
 
-        elif isinstance(piece, Knight):
+        elif isinstance(piece, Bishop):
             pass
 
         elif isinstance(piece, Knight):
@@ -27,7 +27,7 @@ class Board:
 
         elif isinstance(piece, Knight):
             pass
-        
+
         elif isinstance(piece, Knight):
             pass
 
