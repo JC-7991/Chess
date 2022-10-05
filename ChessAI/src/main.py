@@ -25,7 +25,8 @@ class Main:
             game.show_bg(screen)
             game.show_pieces(screen)
 
-            
+            if dragger.dragging:
+                pass
 
             for event in pygame.event.get():
 
