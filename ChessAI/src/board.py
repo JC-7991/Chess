@@ -12,6 +12,9 @@ class Board:
         self._add_pieces('black')
 
     def calc_moves(self, piece, row, col):
+
+        def knight_moves():
+            pass
         
         if isinstance(piece, Pawn):
             pass
