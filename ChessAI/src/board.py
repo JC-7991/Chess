@@ -12,7 +12,9 @@ class Board:
         self._add_pieces('black')
 
     def calc_moves(self, piece, row, col):
-        pass
+        
+        if isinstance(piece, Pawn):
+            pass
 
     def _create(self):
 
