@@ -20,7 +20,7 @@ class Board:
             pass
 
         elif isinstance(piece, Knight):
-            pass
+            knight_moves()
 
         elif isinstance(piece, Bishop):
             pass
