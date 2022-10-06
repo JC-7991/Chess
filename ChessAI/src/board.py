@@ -15,7 +15,14 @@ class Board:
 
         def knight_moves():
             possible_moves = [
-                
+                (),
+                (),
+                (),
+                (),
+                (),
+                (),
+                (),
+                (),
             ]
         
         if isinstance(piece, Pawn):
