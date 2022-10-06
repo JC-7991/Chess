@@ -15,7 +15,7 @@ class Board:
 
         def knight_moves():
             possible_moves = [
-                (),
+                (row - 2, col + 1),
                 (),
                 (),
                 (),
