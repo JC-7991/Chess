@@ -22,7 +22,7 @@ class Board:
                 (),
                 (),
                 (),
-                (),
+                ()
             ]
         
         if isinstance(piece, Pawn):
