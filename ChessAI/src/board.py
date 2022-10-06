@@ -14,10 +14,10 @@ class Board:
     def calc_moves(self, piece, row, col):
 
         def knight_moves():
-            
+
             possible_moves = [
                 (row - 2, col + 1),
-                (),
+                (row - 1, col + 2),
                 (),
                 (),
                 (),
