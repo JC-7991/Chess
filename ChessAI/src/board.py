@@ -14,7 +14,9 @@ class Board:
     def calc_moves(self, piece, row, col):
 
         def knight_moves():
-            pass
+            possible_moves = [
+                
+            ]
         
         if isinstance(piece, Pawn):
             pass
