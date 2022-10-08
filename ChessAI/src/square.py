@@ -9,5 +9,5 @@ class Square:
         return self.piece != None
 
     @staticmethod
-    def in_range():
+    def in_range(*args):
         pass
