@@ -16,18 +16,10 @@ class Board:
         def knight_moves():
 
             possible_moves = [
-
-                (row - 2, col + 1),
-                (row - 1, col + 2),
-                (row + 1, col + 2),
-                (row + 2, col + 1),
-                (row + 2, col - 1),
-                (row + 1, col - 2),
-                (row - 1, col - 2),
-                (row - 2, col - 1)
-
+                (row - 2, col + 1), (row - 1, col + 2), (row + 1, col + 2), (row + 2, col + 1),
+                (row + 2, col - 1), (row + 1, col - 2), (row - 1, col - 2), (row - 2, col - 1)
             ]
-
+            
             for possible_move in possible_moves:
                 possible_move_row, possible_move_col = possible_move
         
