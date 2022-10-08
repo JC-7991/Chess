@@ -10,4 +10,5 @@ class Square:
 
     @staticmethod
     def in_range(*args):
-        pass
+        for arg in args:
+            pass
