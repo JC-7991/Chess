@@ -27,6 +27,8 @@ class Board:
                 (row - 2, col - 1)
 
             ]
+
+            
         
         if isinstance(piece, Pawn):
             pass
