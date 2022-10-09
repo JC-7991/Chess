@@ -8,6 +8,9 @@ class Square:
     def has_piece(self):
         return self.piece != None
 
+    def isempty_or_rival(self, color):
+        pass
+
     @staticmethod
     def in_range(*args):
 
