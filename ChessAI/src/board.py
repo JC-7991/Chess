@@ -24,11 +24,11 @@ class Board:
             for possible_move in possible_moves:
 
                 possible_move_row, possible_move_col = possible_move
-                
                 if Square.in_range(possible_move_row, possible_move_col):
                     if self.squares[possible_move_row][possible_move_col].isempty_or_rival(piece.color):
                         initial = Square(row, col)
                         final = Square(possible_move_row, possible_move_col)
+                        move = Move(initial, final)
         
         if isinstance(piece, Pawn):
             pass
