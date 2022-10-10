@@ -18,7 +18,7 @@ class Square:
         return self.has_piece() and self.piece.color != color
 
     def isempty_or_rival(self, color):
-        pass
+        return self.isempty or self.has_rival_piece()
 
     @staticmethod
     def in_range(*args):
