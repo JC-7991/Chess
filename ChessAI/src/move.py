@@ -1,4 +1,4 @@
 class Move:
     
-    def __init__(self):
+    def __init__(self, initial, final):
         pass
