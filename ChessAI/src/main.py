@@ -23,6 +23,7 @@ class Main:
         while True:
 
             game.show_bg(screen)
+            game.show_moves(screen)
             game.show_pieces(screen)
 
             if dragger.dragging:
