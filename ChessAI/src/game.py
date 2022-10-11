@@ -44,4 +44,8 @@ class Game:
     def show_moves(self, surface):
         if self.dragger.dragging:
             piece = self.dragger.piece
+            
+            for move in piece.moves:
+                pass
+
 
