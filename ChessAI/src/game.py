@@ -47,6 +47,6 @@ class Game:
 
             piece = self.dragger.piece
             for move in piece.moves:
-                pass
+                color = '#C86464'
 
 
