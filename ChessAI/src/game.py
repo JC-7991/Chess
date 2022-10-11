@@ -42,4 +42,6 @@ class Game:
                         surface.blit(img, piece.texture_rect)
 
     def show_moves(self, surface):
-        pass
+        if self.dragger.dragging:
+            piece = self.dragger.piece
+
