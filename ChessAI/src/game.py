@@ -41,5 +41,5 @@ class Game:
                         piece.texture_rect = img.get_rect(center = img_center)
                         surface.blit(img, piece.texture_rect)
 
-    def show_moves():
+    def show_moves(self, surface):
         pass
