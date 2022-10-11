@@ -37,7 +37,9 @@ class Main:
                     clicked_col = dragger.mouseX // SQSIZE
 
                     if board.squares[clicked_row][clicked_col].has_piece():
+
                         piece = board.squares[clicked_row][clicked_col].piece
+                        board.calc_moves(piece, clicked_row, clicked_col)
                         dragger.save_initial(event.pos)
                         dragger.drag_piece(piece)
 
