@@ -15,7 +15,8 @@ class Board:
     def calc_moves(self, piece, row, col):
 
         def pawn_moves():
-            pass
+            if piece.moved:
+                pass
 
         def knight_moves():
 
