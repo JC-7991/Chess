@@ -17,9 +17,9 @@ class Board:
         def pawn_moves():
             
             if piece.moved:
-                pass
+                steps = 1
             else:
-                pass
+                steps = 2
 
         def knight_moves():
 
