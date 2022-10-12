@@ -18,6 +18,8 @@ class Board:
             
             if piece.moved:
                 pass
+            else:
+                pass
 
         def knight_moves():
 
