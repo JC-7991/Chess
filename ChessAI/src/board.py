@@ -14,6 +14,9 @@ class Board:
 
     def calc_moves(self, piece, row, col):
 
+        def pawn_moves():
+            pass
+
         def knight_moves():
 
             possible_moves = [
@@ -24,6 +27,7 @@ class Board:
             for possible_move in possible_moves:
 
                 possible_move_row, possible_move_col = possible_move
+                
                 if Square.in_range(possible_move_row, possible_move_col):
                     if self.squares[possible_move_row][possible_move_col].isempty_or_rival(piece.color):
 
@@ -33,7 +37,7 @@ class Board:
                         piece.add_move(move)
         
         if isinstance(piece, Pawn):
-            pass
+            pawn_moves()
 
         elif isinstance(piece, Knight):
             knight_moves()
@@ -67,7 +71,7 @@ class Board:
         # knights
         self.squares[row_other][1] = Square(row_other, 1, Knight(color))
         self.squares[row_other][6] = Square(row_other, 6, Knight(color)) 
-        self.squares[3][3] = Square(4, 4, Knight(color)) 
+        #self.squares[3][3] = Square(4, 4, Knight(color)) 
         
 
         # bishops
