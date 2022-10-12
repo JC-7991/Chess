@@ -17,6 +17,9 @@ class Board:
         def pawn_moves():
 
             steps = 1 if piece.moved else 2
+            
+            start = row + piece.dir
+            end = row + (piece.dir * (1 + steps))
 
 
         def knight_moves():
