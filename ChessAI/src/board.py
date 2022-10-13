@@ -21,7 +21,8 @@ class Board:
             end = row + (piece.dir * (1 + steps))
 
             for move_row in range(start, end, piece.dir):
-                pass
+                if Square.in_range(move_row):
+                    pass
 
 
         def knight_moves():
