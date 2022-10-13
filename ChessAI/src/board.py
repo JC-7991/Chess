@@ -22,7 +22,8 @@ class Board:
 
             for move_row in range(start, end, piece.dir):
                 if Square.in_range(move_row):
-                    pass
+                    if self.squares[move_row][col].isempty():
+                        pass
 
 
         def knight_moves():
