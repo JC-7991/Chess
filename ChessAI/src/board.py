@@ -45,8 +45,7 @@ class Board:
                         move = Move(initial, final)
                         piece.add_move(move)
         
-        if isinstance(piece, Pawn):
-            pawn_moves()
+        if isinstance(piece, Pawn): pawn_moves()
 
         elif isinstance(piece, Knight):
             knight_moves()
