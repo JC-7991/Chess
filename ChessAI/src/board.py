@@ -28,11 +28,13 @@ class Board:
                         final = Square(move_row, col)
                         move = Move(initial, final)
                         piece.add_move(move)
-                        
+
                     else:
                         break
                 else:
                     break
+            
+            move_row = row + piece.dir
 
 
         def knight_moves():
