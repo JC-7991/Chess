@@ -47,14 +47,11 @@ class Board:
         
         if isinstance(piece, Pawn): pawn_moves()
 
-        elif isinstance(piece, Knight):
-            knight_moves()
+        elif isinstance(piece, Knight): knight_moves()
 
-        elif isinstance(piece, Bishop):
-            pass
+        elif isinstance(piece, Bishop): pass
 
-        elif isinstance(piece, Rook):
-            pass
+        elif isinstance(piece, Rook): pass
 
         elif isinstance(piece, Queen):
             pass
