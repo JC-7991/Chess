@@ -53,8 +53,7 @@ class Board:
 
         elif isinstance(piece, Rook): pass
 
-        elif isinstance(piece, Queen):
-            pass
+        elif isinstance(piece, Queen): pass
 
         elif isinstance(piece, King):
             pass
