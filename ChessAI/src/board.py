@@ -35,6 +35,7 @@ class Board:
                     break
             
             possible_move_row = row + piece.dir
+            possible_move_cols = []
 
 
         def knight_moves():
