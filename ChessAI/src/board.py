@@ -55,8 +55,7 @@ class Board:
 
         elif isinstance(piece, Queen): pass
 
-        elif isinstance(piece, King):
-            pass
+        elif isinstance(piece, King): pass
 
     def _create(self):
 
