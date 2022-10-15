@@ -64,7 +64,7 @@ class Board:
                         move = Move(initial, final)
                         piece.add_move(move)
         
-        def straightline_moves():
+        def straightline_moves(incrs):
             pass
         
         if isinstance(piece, Pawn): pawn_moves()
