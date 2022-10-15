@@ -67,17 +67,23 @@ class Board:
         def straightline_moves(incrs):
             pass
         
-        if isinstance(piece, Pawn): pawn_moves()
+        if isinstance(piece, Pawn):
+            pawn_moves()
 
-        elif isinstance(piece, Knight): knight_moves()
+        elif isinstance(piece, Knight):
+            knight_moves()
 
-        elif isinstance(piece, Bishop): pass
+        elif isinstance(piece, Bishop):
+            straightline_moves()
 
-        elif isinstance(piece, Rook): pass
+        elif isinstance(piece, Rook):
+            straightline_moves()
 
-        elif isinstance(piece, Queen): pass
+        elif isinstance(piece, Queen):
+            straightline_moves()
 
-        elif isinstance(piece, King): pass
+        elif isinstance(piece, King):
+            pass
 
     def _create(self):
 
