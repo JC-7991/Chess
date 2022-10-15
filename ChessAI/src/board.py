@@ -82,10 +82,14 @@ class Board:
             ])
 
         elif isinstance(piece, Rook):
-            straightline_moves()
+            straightline_moves([
+
+            ])
 
         elif isinstance(piece, Queen):
-            straightline_moves()
+            straightline_moves([
+                
+            ])
 
         elif isinstance(piece, King):
             pass
