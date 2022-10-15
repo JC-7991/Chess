@@ -38,7 +38,8 @@ class Board:
             possible_move_cols = [col - 1, col + 1]
             for possible_move_col in possible_move_cols:
                 if Square.in_range(possible_move_row, possible_move_col):
-                    pass
+                    if self.squares[possible_move_row][possible_move_col].has_rival_piece():
+                        pass
 
 
         def knight_moves():
