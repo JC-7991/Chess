@@ -76,6 +76,9 @@ class Board:
         elif isinstance(piece, Bishop):
             straightline_moves([
                 (-1, 1),
+                (-1, -1),
+                (1, 1),
+                (1, -1)
             ])
 
         elif isinstance(piece, Rook):
