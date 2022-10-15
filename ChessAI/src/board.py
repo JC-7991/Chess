@@ -74,7 +74,9 @@ class Board:
             knight_moves()
 
         elif isinstance(piece, Bishop):
-            straightline_moves()
+            straightline_moves([
+                (-1, 1),
+            ])
 
         elif isinstance(piece, Rook):
             straightline_moves()
