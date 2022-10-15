@@ -36,11 +36,15 @@ class Board:
             
             possible_move_row = row + piece.dir
             possible_move_cols = [col - 1, col + 1]
+            
             for possible_move_col in possible_move_cols:
                 if Square.in_range(possible_move_row, possible_move_col):
                     if self.squares[possible_move_row][possible_move_col].has_enemy_piece(piece.color):
+
                         initial = Square(row, col)
                         final = Square(possible_move_row, possible_move_col)
+                        move = Move(initial, final)
+                        piece.add_move(move)
 
 
         def knight_moves():
