@@ -68,6 +68,7 @@ class Board:
             for incr in incrs:
                 row_incr, col_incr  = incr
                 possible_move_row = row + row_incr
+                possible_move_col = col + col_incr
         
         if isinstance(piece, Pawn):
             pawn_moves()
