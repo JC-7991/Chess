@@ -91,14 +91,10 @@ class Board:
 
         elif isinstance(piece, Queen):
             straightline_moves([
-                (-1, 1),
-                (-1, -1),
-                (1, 1),
-                (1, -1),
-                (-1, 0),
-                (0, 1),
-                (1, 0),
-                (0, -1)
+                (-1, 1), (-1, -1),
+                (1, 1), (1, -1),
+                (-1, 0), (0, 1),
+                (1, 0), (0, -1)
             ])
 
         elif isinstance(piece, King):
