@@ -23,12 +23,10 @@ class Board:
             for possible_move_row in range(start, end, piece.dir):
                 if Square.in_range(possible_move_row):
                     if self.squares[possible_move_row][col].isempty():
-
                         initial = Square(row, col)
                         final = Square(possible_move_row, col)
                         move = Move(initial, final)
                         piece.add_move(move)
-
                     else:
                         break
                 else:
