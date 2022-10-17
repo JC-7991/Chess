@@ -71,8 +71,14 @@ class Board:
                 possible_move_col = col + col_incr
 
                 if Square.in_range(possible_move_row, possible_move_col):
+
+                    initial = Square(row, col)
+                    final = Square(possible_move_row, possible_move_col)
+                    move = Move(initial, final)
+
                     if self.squares[possible_move_row][possible_move_col].isempty():
                         pass
+                    
                     if self.squares[possible_move_row][possible_move_col].has_enemy_piece(piece.color):
                         pass
         
