@@ -65,11 +65,15 @@ class Board:
                         piece.add_move(move)
         
         def straightline_moves(incrs):
-            
+
             for incr in incrs:
+
                 row_incr, col_incr  = incr
                 possible_move_row = row + row_incr
                 possible_move_col = col + col_incr
+
+                if Square.in_range(possible_move_row, possible_move_col):
+                    pass
         
         if isinstance(piece, Pawn):
             pawn_moves()
