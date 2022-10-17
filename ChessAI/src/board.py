@@ -70,17 +70,22 @@ class Board:
                 possible_move_row = row + row_incr
                 possible_move_col = col + col_incr
 
-                if Square.in_range(possible_move_row, possible_move_col):
+                while True:
 
-                    initial = Square(row, col)
-                    final = Square(possible_move_row, possible_move_col)
-                    move = Move(initial, final)
+                    if Square.in_range(possible_move_row, possible_move_col):
 
-                    if self.squares[possible_move_row][possible_move_col].isempty():
-                        piece.add_move(move)
+                        initial = Square(row, col)
+                        final = Square(possible_move_row, possible_move_col)
+                        move = Move(initial, final)
 
-                    if self.squares[possible_move_row][possible_move_col].has_enemy_piece(piece.color):
-                        piece.add_move(move)
+                        if self.squares[possible_move_row][possible_move_col].isempty():
+                            piece.add_move(move)
+
+                        if self.squares[possible_move_row][possible_move_col].has_enemy_piece(piece.color):
+                            piece.add_move(move)
+
+                        possible_move_row = possible_move_row + row_incr
+                        possible_move_col = possible_move_col + col_incr
         
         if isinstance(piece, Pawn):
             pawn_moves()
