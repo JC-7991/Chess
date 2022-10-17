@@ -73,6 +73,8 @@ class Board:
                 if Square.in_range(possible_move_row, possible_move_col):
                     if self.squares[possible_move_row][possible_move_col].isempty():
                         pass
+                    if self.squares[possible_move_row][possible_move_col].has_enemy_piece(piece.color):
+                        pass
         
         if isinstance(piece, Pawn):
             pawn_moves()
