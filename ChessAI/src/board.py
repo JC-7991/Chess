@@ -77,8 +77,8 @@ class Board:
                     move = Move(initial, final)
 
                     if self.squares[possible_move_row][possible_move_col].isempty():
-                        pass
-                    
+                        piece.add_move(move)
+
                     if self.squares[possible_move_row][possible_move_col].has_enemy_piece(piece.color):
                         pass
         
