@@ -83,6 +83,7 @@ class Board:
 
                         if self.squares[possible_move_row][possible_move_col].has_enemy_piece(piece.color):
                             piece.add_move(move)
+                            break
 
                     else:
                         break
