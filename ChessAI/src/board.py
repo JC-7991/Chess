@@ -143,7 +143,7 @@ class Board:
 
         # bishops
         self.squares[row_other][2] = Square(row_other, 2, Bishop(color))
-        self.squares[row_other][5] = Square(row_other, 5, Bishop(color)) 
+        self.squares[row_other][5] = Square(row_other, 5, Bishop(color))
 
         # rooks
         self.squares[row_other][0] = Square(row_other, 0, Rook(color))
