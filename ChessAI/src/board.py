@@ -94,6 +94,9 @@ class Board:
                     possible_move_row = possible_move_row + row_incr
                     possible_move_col = possible_move_col + col_incr
         
+        def king_moves():
+            pass
+        
         if isinstance(piece, Pawn):
             pawn_moves()
 
