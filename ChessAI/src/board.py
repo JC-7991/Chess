@@ -104,7 +104,10 @@ class Board:
             ]
 
             for possible_move in adjs:
+
                 possible_move_row, possible_move_col = possible_move
+                if Square.in_range(possible_move_row, possible_move_col):
+                    pass
         
         if isinstance(piece, Pawn):
             pawn_moves()
