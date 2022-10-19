@@ -95,9 +95,10 @@ class Board:
                     possible_move_col = possible_move_col + col_incr
         
         def king_moves():
+            
             adjs = [
                 (row - 1), (col + 0),
-                
+
             ]
         
         if isinstance(piece, Pawn):
