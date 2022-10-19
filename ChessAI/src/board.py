@@ -95,7 +95,9 @@ class Board:
                     possible_move_col = possible_move_col + col_incr
         
         def king_moves():
-            pass
+            adjs = [
+
+            ]
         
         if isinstance(piece, Pawn):
             pawn_moves()
@@ -124,7 +126,7 @@ class Board:
             ])
 
         elif isinstance(piece, King):
-            pass
+            king_moves()
 
     def _create(self):
 
