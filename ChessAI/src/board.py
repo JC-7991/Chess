@@ -103,8 +103,8 @@ class Board:
                 (row + 0), (col - 1), (row - 1), (col - 1)
             ]
 
-            for adj in adjs:
-                pass
+            for possible_move in adjs:
+                possible_move_row, possible_move_col = possible_move
         
         if isinstance(piece, Pawn):
             pawn_moves()
