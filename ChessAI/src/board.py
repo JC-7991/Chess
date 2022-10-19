@@ -97,8 +97,8 @@ class Board:
         def king_moves():
             
             adjs = [
-                (row - 1), (col + 0),
-
+                (row - 1), (col + 0), (row - 1), (col + 0),
+                
             ]
         
         if isinstance(piece, Pawn):
