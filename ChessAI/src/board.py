@@ -16,7 +16,7 @@ class Board:
         pass
 
     def valid_move(self, piece, move):
-        return move in pieces.move
+        return move in piece.move
 
     def calc_moves(self, piece, row, col):
 
