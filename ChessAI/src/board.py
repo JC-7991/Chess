@@ -176,4 +176,3 @@ class Board:
 
         # king
         self.squares[row_other][4] = Square(row_other, 4, King(color)) 
-        self.squares[5][4] = Square(5, 4, King(color)) 
