@@ -57,7 +57,7 @@ class Board:
 
                 possible_move_row, possible_move_col = possible_move
                 if Square.in_range(possible_move_row, possible_move_col):
-                    if self.squares[possible_move_row][possible_move_col].isempty_or_rival(piece.color):
+                    if self.squares[possible_move_row][possible_move_col].isempty_or_enemy(piece.color):
                         
                         initial = Square(row, col)
                         final = Square(possible_move_row, possible_move_col)
@@ -97,21 +97,24 @@ class Board:
                     possible_move_col = possible_move_col + col_incr
         
         def king_moves():
-            
+
             adjs = [
-                (row - 1), (col + 0), (row - 1), (col + 1),
-                (row + 0), (col + 1), (row + 1), (col + 1),
-                (row + 1), (col + 0), (row + 1), (col - 1),
-                (row + 0), (col - 1), (row - 1), (col - 1)
+                (row-1, col+0), # up
+                (row-1, col+1), # up-right
+                (row+0, col+1), # right
+                (row+1, col+1), # down-right
+                (row+1, col+0), # down
+                (row+1, col-1), # down-left
+                (row+0, col-1), # left
+                (row-1, col-1), # up-left
             ]
 
             for possible_move in adjs:
 
                 possible_move_row, possible_move_col = possible_move
                 if Square.in_range(possible_move_row, possible_move_col):
-
                     if self.squares[possible_move_row][possible_move_col].isempty_or_enemy(piece.color):
-
+                        
                         initial = Square(row, col)
                         final = Square(possible_move_row, possible_move_col)
                         move = Move(initial, final)
@@ -177,3 +180,4 @@ class Board:
 
         # king
         self.squares[row_other][4] = Square(row_other, 4, King(color)) 
+        self.squares[5][4] = Square(5, 4, King(color)) 
