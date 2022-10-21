@@ -13,7 +13,8 @@ class Board:
         self._add_pieces('black')
 
     def move(self, piece, move):
-        pass
+        initial = move.initial
+        final = move.final
 
     def valid_move(self, piece, move):
         return move in piece.moves
