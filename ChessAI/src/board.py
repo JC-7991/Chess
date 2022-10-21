@@ -13,8 +13,10 @@ class Board:
         self._add_pieces('black')
 
     def move(self, piece, move):
+
         initial = move.initial
         final = move.final
+        self.squares[initial.row][initial.col] = None
 
     def valid_move(self, piece, move):
         return move in piece.moves
