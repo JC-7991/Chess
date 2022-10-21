@@ -12,6 +12,9 @@ class Board:
         self._add_pieces('white')
         self._add_pieces('black')
 
+    def move(self, piece, move):
+        pass
+
     def calc_moves(self, piece, row, col):
 
         def pawn_moves():
