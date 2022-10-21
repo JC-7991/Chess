@@ -15,6 +15,9 @@ class Board:
     def move(self, piece, move):
         pass
 
+    def valid_move():
+        pass
+
     def calc_moves(self, piece, row, col):
 
         def pawn_moves():
