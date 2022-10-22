@@ -75,6 +75,9 @@ class Main:
                         final = Square(released_row, released_col)
                         move = Move(initial, final)
 
+                        if board.valid_move(dragger.piece, move):
+                            pass
+
                     dragger.undrag_piece()
 
                 elif event.type == pygame.QUIT:
