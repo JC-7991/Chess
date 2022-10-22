@@ -6,6 +6,7 @@ from dragger import Dragger
 class Game:
 
     def __init__(self):
+        self.next_player = 'white'
         self.board = Board()
         self.dragger = Dragger()
 
