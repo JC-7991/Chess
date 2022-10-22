@@ -16,8 +16,11 @@ class Board:
 
         initial = move.initial
         final = move.final
+
         self.squares[initial.row][initial.col].piece = None
         self.squares[final.row][final.col].piece = piece
+
+        piece.moved = True
 
     def valid_move(self, piece, move):
         return move in piece.moves
