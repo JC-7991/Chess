@@ -22,6 +22,8 @@ class Piece:
     def add_move(self, move):
         self.moves.append(move)
 
+    def clear_moves(self):
+        pass
 
 class Pawn(Piece):
 
