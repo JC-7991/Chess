@@ -45,4 +45,4 @@ class Game:
                 pygame.draw.rect(surface, color, rect)
 
     def next_turn(self):
-        
+        pass
