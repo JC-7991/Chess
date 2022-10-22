@@ -21,7 +21,7 @@ class Board:
         self.squares[final.row][final.col].piece = piece
 
         piece.moved = True
-        piece.moves = []
+        piece.clear_moves()
 
     def valid_move(self, piece, move):
         return move in piece.moves
