@@ -77,6 +77,8 @@ class Main:
 
                         if board.valid_move(dragger.piece, move):
                             board.move(dragger.piece, move)
+                            game.show_bg(screen)
+                            game.show_pieces(screen)
 
                     dragger.undrag_piece()
 
