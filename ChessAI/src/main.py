@@ -76,7 +76,7 @@ class Main:
                         move = Move(initial, final)
 
                         if board.valid_move(dragger.piece, move):
-                            pass
+                            board.move(dragger.piece, move)
 
                     dragger.undrag_piece()
 
