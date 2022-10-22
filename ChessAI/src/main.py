@@ -64,6 +64,9 @@ class Main:
 
                     if dragger.dragging:
                         dragger.update_mouse(event.pos)
+                        released_row = dragger.mouseY // SQSIZE
+                        released_col = dragger.mouseX // SQSIZE
+
                     dragger.undrag_piece()
 
                 elif event.type == pygame.QUIT:
