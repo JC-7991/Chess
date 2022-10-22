@@ -12,4 +12,4 @@ class Move:
         return s
 
     def __eq__(self, other):
-        pass
+        return self.initial == other.initial and self.final == self.final
