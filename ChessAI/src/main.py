@@ -2,6 +2,7 @@ import pygame
 import sys
 from const import *
 from game import Game
+from square import Square
 
 class Main:
 
@@ -66,6 +67,7 @@ class Main:
                         dragger.update_mouse(event.pos)
                         released_row = dragger.mouseY // SQSIZE
                         released_col = dragger.mouseX // SQSIZE
+                        initial = Square(dragger.initial_row, dragger.initial_col)
 
                     dragger.undrag_piece()
 
