@@ -51,8 +51,12 @@ class Game:
     def show_last_move(self):
 
         if self.board.last_move:
+
             initial = self.board.last_move.initial
             final = self.board.last_move.final
+
+            for pos in [initial, final]:
+                pass
 
 
     def next_turn(self):
