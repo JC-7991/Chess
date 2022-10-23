@@ -56,7 +56,7 @@ class Game:
             final = self.board.last_move.final
 
             for pos in [initial, final]:
-                pass
+                color = (244, 247, 116) if (pos.row + pos.col) % 2 == 0 else (172, 195, 51)
 
 
     def next_turn(self):
