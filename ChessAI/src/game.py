@@ -48,5 +48,8 @@ class Game:
                 rect = (move.final.col * SQSIZE, move.final.row * SQSIZE, SQSIZE, SQSIZE)
                 pygame.draw.rect(surface, color, rect)
 
+    def show_last_move(self):
+        pass
+
     def next_turn(self):
         self.next_player = 'white' if self.next_player == 'black' else 'black'
