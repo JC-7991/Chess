@@ -6,7 +6,7 @@ from dragger import Dragger
 class Game:
 
     def __init__(self):
-        
+
         self.next_player = 'white'
         self.hovered_sq = None
         self.board = Board()
@@ -67,3 +67,6 @@ class Game:
 
     def next_turn(self):
         self.next_player = 'white' if self.next_player == 'black' else 'black'
+
+    def set_hover(self, row, col):
+        pass
