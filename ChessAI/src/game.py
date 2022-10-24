@@ -57,6 +57,7 @@ class Game:
 
             for pos in [initial, final]:
                 color = (244, 247, 116) if (pos.row + pos.col) % 2 == 0 else (172, 195, 51)
+                rect = (pos.col * SQSIZE, pos.row * SQSIZE, SQSIZE, SQSIZE)
 
 
     def next_turn(self):
