@@ -50,7 +50,7 @@ class Board:
 
                     else:
                         break
-                    
+
                 else:
                     break
             
@@ -144,18 +144,21 @@ class Board:
             knight_moves()
 
         elif isinstance(piece, Bishop):
+
             straightline_moves([
                 (-1, 1), (-1, -1),
                 (1, 1), (1, -1)
             ])
 
         elif isinstance(piece, Rook):
+
             straightline_moves([
                 (-1, 0), (0, 1),
                 (1, 0), (0, -1)
             ])
 
         elif isinstance(piece, Queen):
+
             straightline_moves([
                 (-1, 1), (-1, -1),
                 (1, 1), (1, -1),
@@ -176,11 +179,9 @@ class Board:
 
         row_pawn, row_other = (6, 7) if color == 'white' else (1, 0)
 
-        # pawns
         for col in range(COLS):
             self.squares[row_pawn][col] = Square(row_pawn, col, Pawn(color)) 
 
-        # knights
         self.squares[row_other][1] = Square(row_other, 1, Knight(color))
         self.squares[row_other][6] = Square(row_other, 6, Knight(color)) 
 
