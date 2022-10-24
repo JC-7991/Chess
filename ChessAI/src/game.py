@@ -7,6 +7,7 @@ class Game:
 
     def __init__(self):
         self.next_player = 'white'
+        self.hovered_sq = None
         self.board = Board()
         self.dragger = Dragger()
 
