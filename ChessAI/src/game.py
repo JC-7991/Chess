@@ -63,7 +63,8 @@ class Game:
                 pygame.draw.rect(surface, color, rect)
 
     def show_hover(self):
-        pass
+        if self.hovered_sq:
+            pass
 
     def next_turn(self):
         self.next_player = 'white' if self.next_player == 'black' else 'black'
