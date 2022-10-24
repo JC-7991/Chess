@@ -76,8 +76,10 @@ class Main:
                         move = Move(initial, final)
 
                         if board.valid_move(dragger.piece, move):
+
                             board.move(dragger.piece, move)
                             game.show_bg(screen)
+                            game.show_last_move(screen)
                             game.show_pieces(screen)
                             game.next_turn()
 
