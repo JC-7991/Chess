@@ -15,7 +15,6 @@ class Main:
         pygame.display.set_caption('Chess')
         self.game = Game()
 
-    # Loop through all events and check if the user quits the game.
     def mainloop(self):
 
         game = self.game
