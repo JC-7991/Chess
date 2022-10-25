@@ -1,4 +1,5 @@
 class Color:
     
     def __init__(self, light, dark):
-        pass
+        self.light = light
+        self.dark = dark
