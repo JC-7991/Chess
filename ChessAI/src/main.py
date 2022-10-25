@@ -56,6 +56,10 @@ class Main:
 
                 elif event.type == pygame.MOUSEMOTION:
 
+                    motion_row = event.pos[1] // SQSIZE
+                    motion_col = event.pos[0] // SQSIZE
+                    game.set_hover()
+
                     if dragger.dragging:
                         
                         dragger.update_mouse(event.pos)
