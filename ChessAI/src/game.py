@@ -64,7 +64,9 @@ class Game:
 
     def show_hover(self):
         if self.hovered_sq:
-            pass
+            color = (244, 247, 116) if (pos.row + pos.col) % 2 == 0 else (172, 195, 51)
+            rect = (pos.col * SQSIZE, pos.row * SQSIZE, SQSIZE, SQSIZE)
+            pygame.draw.rect(surface, color, rect)
 
     def next_turn(self):
         self.next_player = 'white' if self.next_player == 'black' else 'black'
