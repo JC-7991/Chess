@@ -64,9 +64,12 @@ class Main:
                         
                         dragger.update_mouse(event.pos)
                         game.show_bg(screen)
+
                         game.show_last_move(screen)
                         game.show_moves(screen)
+
                         game.show_pieces(screen)
+                        game.show_hover(screen)
                         dragger.update_blit(screen)
 
                 elif event.type == pygame.MOUSEBUTTONUP:
