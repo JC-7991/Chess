@@ -1,4 +1,5 @@
 class Config:
-    
-    def __call__(self):
+
+    def __init__(self):
         pass
+
