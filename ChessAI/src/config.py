@@ -6,4 +6,5 @@ class Config:
     def change_theme():
         pass
 
-    def add_themes
+    def add_themes():
+        pass
