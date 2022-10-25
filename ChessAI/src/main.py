@@ -58,7 +58,7 @@ class Main:
 
                     motion_row = event.pos[1] // SQSIZE
                     motion_col = event.pos[0] // SQSIZE
-                    game.set_hover()
+                    game.set_hover(motion_row, motion_col)
 
                     if dragger.dragging:
                         
