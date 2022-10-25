@@ -62,10 +62,10 @@ class Game:
                 rect = (pos.col * SQSIZE, pos.row * SQSIZE, SQSIZE, SQSIZE)
                 pygame.draw.rect(surface, color, rect)
 
-    def show_hover(self):
+    def show_hover(self, surface):
         if self.hovered_sq:
             color = (180, 180, 180)
-            rect = (pos.col * SQSIZE, pos.row * SQSIZE, SQSIZE, SQSIZE)
+            rect = (self.hovered_sq.col * SQSIZE, self.hovered_sq.row * SQSIZE, SQSIZE, SQSIZE)
             pygame.draw.rect(surface, color, rect)
 
     def next_turn(self):
