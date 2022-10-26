@@ -6,10 +6,12 @@ from theme import Theme
 class Config:
 
     def __init__(self):
-        pass
+        self.themes = []
+        self._add_themes()
+        self.idx = 0
 
     def change_theme():
         pass
 
-    def add_themes(self):
+    def _add_themes(self):
         pass
