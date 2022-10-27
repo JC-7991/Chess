@@ -22,10 +22,9 @@ class Game:
         for row in range(ROWS):
             for col in range(COLS):
 
-                #
-                if(row + col) % 2 == 0: color = (54, 54, 54)
-                else: color = (173, 173, 173)
-
+                color = theme.bg.light if (row + col) % 2 == 0 else theme.bg.da
+                #if(row + col) % 2 == 0: color = (54, 54, 54)
+                #else: color = (173, 173, 173)
                 rect = (col * SQSIZE, row * SQSIZE, SQSIZE, SQSIZE)
                 pygame.draw.rect(surface, color, rect)
     
