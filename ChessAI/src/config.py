@@ -11,9 +11,11 @@ class Config:
         self._add_themes()
         self.idx = 0
         self.theme = self.themes[self.idx]
+
         self.move_sound = Sound(
             os.path.join('assets/sounds/move.wav')
         )
+        
         self.capture_sound = Sound(
             os.path.join('assets/sounds/capture.wav')
         )
