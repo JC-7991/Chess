@@ -1,4 +1,5 @@
 import pygame
+
 from const import *
 from board import Board
 from dragger import Dragger
@@ -21,6 +22,7 @@ class Game:
         for row in range(ROWS):
             for col in range(COLS):
 
+                
                 if(row + col) % 2 == 0: color = (54, 54, 54)
                 else: color = (173, 173, 173)
 
