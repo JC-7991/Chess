@@ -14,6 +14,8 @@ class Game:
 
     def show_bg(self, surface):
 
+        
+
         for row in range(ROWS):
             for col in range(COLS):
 
