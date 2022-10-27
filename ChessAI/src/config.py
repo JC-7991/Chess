@@ -29,7 +29,7 @@ class Config:
     def _add_themes(self):
 
         green = Theme((234, 235, 200), (119, 154, 88), (244, 247, 116), (172, 195, 51), '#C86464', '#C84646')
-        brown = Theme()
+        brown = Theme((235, 209, 166), (165, 117, 80), (245, 234, 100), (209, 185, 59), '#C86464', '#C84646')
         blue = Theme()
         gray = Theme()
         self.themes = [green, brown, blue, gray]
