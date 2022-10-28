@@ -53,6 +53,7 @@ class Game:
 
     def show_last_move(self, surface):
 
+        theme = self.config.theme
         if self.board.last_move:
 
             initial = self.board.last_move.initial
