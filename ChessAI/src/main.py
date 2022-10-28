@@ -94,6 +94,9 @@ class Main:
                             game.next_turn()
 
                     dragger.undrag_piece()
+                
+                elif event.key == pygame.KEYDOWN:
+                    pass
 
                 elif event.type == pygame.QUIT:
                     pygame.quit()
