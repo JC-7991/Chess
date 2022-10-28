@@ -42,12 +42,12 @@ class Game:
 
     def show_moves(self, surface):
 
+        theme = self.config.theme
         if self.dragger.dragging:
 
             piece = self.dragger.piece
             for move in piece.moves:
-
-                color = '#C86464' if (move.final.row + move.final.col) % 2 == 0 else '#C84646'
+                color = theme.moves.light if (move.final.row + move.final.col) % 2 == 0 else theme.moves.dark
                 rect = (move.final.col * SQSIZE, move.final.row * SQSIZE, SQSIZE, SQSIZE)
                 pygame.draw.rect(surface, color, rect)
 
