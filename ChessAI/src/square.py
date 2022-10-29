@@ -7,7 +7,7 @@ class Square:
         self.row = row
         self.col = col
         self.piece = piece
-        self.alphacol = self.ALPHACOLS
+        self.alphacol = self.ALPHACOLS[col]
 
     def __eq__(self, other):
         return self.row == other.row and self.col == other.col
@@ -34,3 +34,7 @@ class Square:
             if arg < 0 or arg > 7:
                 return False
         return True
+
+    @staticmethod
+    def get_alphacol(col):
+        pass
