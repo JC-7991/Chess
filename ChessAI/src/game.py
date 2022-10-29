@@ -27,6 +27,8 @@ class Game:
 
                 if col == 0:
                     color = theme.bg.dark if row % 2 == 0 else theme.bg.light
+                    lbl = self.config.font.render(str(ROWS - row), 1, color)
+                    lbl_pos = (5, 5 + row * SQSIZE)
     
     def show_pieces(self, surface):
 
