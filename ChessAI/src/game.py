@@ -31,6 +31,9 @@ class Game:
                     lbl = self.config.font.render(str(ROWS - row), 1, color)
                     lbl_pos = (5, 5 + row * SQSIZE)
                     surface.blit(lbl, lbl_pos)
+
+                if row == 7:
+                    pass
     
     def show_pieces(self, surface):
 
