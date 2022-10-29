@@ -99,3 +99,6 @@ class Game:
     def play_sound(self, captured = False):
         if captured: self.config.capture_sound.play()
         else: self.config.move_sound.play()
+
+    def reset(self):
+        pass
