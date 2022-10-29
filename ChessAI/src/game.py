@@ -26,11 +26,11 @@ class Game:
                 pygame.draw.rect(surface, color, rect)
 
                 if col == 0:
-                    
+
                     color = theme.bg.dark if row % 2 == 0 else theme.bg.light
                     lbl = self.config.font.render(str(ROWS - row), 1, color)
                     lbl_pos = (5, 5 + row * SQSIZE)
-                    surface.blit(lbl, color, lbl_pos)
+                    surface.blit(lbl, lbl_pos)
     
     def show_pieces(self, surface):
 
