@@ -26,7 +26,7 @@ class Game:
                 pygame.draw.rect(surface, color, rect)
 
                 if col == 0:
-                    pass
+                    color = theme.bg.dark if row % 2 == 0 else theme.bg.light
     
     def show_pieces(self, surface):
 
