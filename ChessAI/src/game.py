@@ -20,9 +20,13 @@ class Game:
         theme = self.config.theme
         for row in range(ROWS):
             for col in range(COLS):
+
                 color = theme.bg.light if (row + col) % 2 == 0 else theme.bg.dark
                 rect = (col * SQSIZE, row * SQSIZE, SQSIZE, SQSIZE)
                 pygame.draw.rect(surface, color, rect)
+
+                if col == 0:
+                    pass
     
     def show_pieces(self, surface):
 
