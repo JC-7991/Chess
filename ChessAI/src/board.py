@@ -23,7 +23,7 @@ class Board:
         self.squares[final.row][final.col].piece = piece
 
         if isinstance(piece, Pawn):
-            pass
+            self.check_promotion(piece, final)
 
         piece.moved = True
         piece.clear_moves()
@@ -31,6 +31,9 @@ class Board:
 
     def valid_move(self, piece, move):
         return move in piece.moves
+
+    def check_promotion(self, piece, final):
+        pass
 
     def calc_moves(self, piece, row, col):
 
