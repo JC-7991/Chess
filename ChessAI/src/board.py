@@ -33,7 +33,8 @@ class Board:
         return move in piece.moves
 
     def check_promotion(self, piece, final):
-        pass
+        if final.row == 0 or final.row == 7:
+            pass
 
     def calc_moves(self, piece, row, col):
 
