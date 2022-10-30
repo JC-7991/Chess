@@ -22,6 +22,9 @@ class Board:
         self.squares[initial.row][initial.col].piece = None
         self.squares[final.row][final.col].piece = piece
 
+        if isinstance(piece, Pawn):
+            pass
+
         piece.moved = True
         piece.clear_moves()
         self.last_move = move
