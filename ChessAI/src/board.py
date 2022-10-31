@@ -137,7 +137,6 @@ class Board:
             ]
 
             for possible_move in adjs:
-
                 possible_move_row, possible_move_col = possible_move
                 if Square.in_range(possible_move_row, possible_move_col):
                     if self.squares[possible_move_row][possible_move_col].isempty_or_enemy(piece.color):
