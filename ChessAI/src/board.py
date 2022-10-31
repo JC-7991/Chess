@@ -147,7 +147,6 @@ class Board:
                         piece.add_move(move)
 
             if not piece.moved:
-
                 left_rook = self.squares[row][0]
                 if isinstance(left_rook, Rook):
                     if not left_rook.moved:
