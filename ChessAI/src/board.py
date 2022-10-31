@@ -150,7 +150,8 @@ class Board:
                 left_rook = self.squares[row][0]
                 if isinstance(left_rook, Rook):
                     if not left_rook.moved:
-                        pass
+                        for c in range(1, 4):
+                            pass
         
         if isinstance(piece, Pawn):
             pawn_moves()
