@@ -148,7 +148,7 @@ class Board:
                         piece.add_move(move)
 
             if not piece.moved:
-                pass
+                left_rook = self.squares[row][0]
         
         if isinstance(piece, Pawn):
             pawn_moves()
