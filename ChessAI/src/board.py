@@ -158,6 +158,7 @@ class Board:
                             if c == 3:
                                 piece.left_rook = left_rook
                                 initial = Square(row, 0)
+                                final = Square(row, 3)
         
         if isinstance(piece, Pawn):
             pawn_moves()
