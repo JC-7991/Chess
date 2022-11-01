@@ -168,6 +168,27 @@ class Board:
                                 final = Square(row, 2)
                                 move = Move(initial, final)
                                 piece.add_move(move)
+
+                right_rook = self.squares[row][7]
+                if isinstance(right_rook, Rook):
+                    if not right_rook.moved:
+                        for c in range(1, 4):
+                            
+                            if self.squares[row][c].has_piece():
+                                break
+                            if c == 3:
+
+                                piece.right_rook = right_rook
+                                
+                                initial = Square(row, 0)
+                                final = Square(row, 3)
+                                move = Move(initial, final)
+                                right_rook.add_move(move)
+
+                                initial = Square(row, col)
+                                final = Square(row, 2)
+                                move = Move(initial, final)
+                                piece.add_move(move)
         
         if isinstance(piece, Pawn):
             pawn_moves()
