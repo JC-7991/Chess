@@ -158,8 +158,14 @@ class Board:
                             if c == 3:
 
                                 piece.left_rook = left_rook
+                                
                                 initial = Square(row, 0)
                                 final = Square(row, 3)
+                                move = Move(initial, final)
+                                left_rook.add_move(move)
+
+                                initial = Square(row, col)
+                                final = Square(row, 2)
                                 move = Move(initial, final)
                                 left_rook.add_move(move)
         
