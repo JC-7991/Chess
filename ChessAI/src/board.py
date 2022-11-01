@@ -156,11 +156,12 @@ class Board:
                             if self.squares[row][c].has_piece():
                                 break
                             if c == 3:
-                                
+
                                 piece.left_rook = left_rook
                                 initial = Square(row, 0)
                                 final = Square(row, 3)
                                 move = Move(initial, final)
+                                left_rook.add_move(move)
         
         if isinstance(piece, Pawn):
             pawn_moves()
