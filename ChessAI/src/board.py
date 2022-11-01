@@ -167,7 +167,7 @@ class Board:
                                 initial = Square(row, col)
                                 final = Square(row, 2)
                                 move = Move(initial, final)
-                                left_rook.add_move(move)
+                                piece.add_move(move)
         
         if isinstance(piece, Pawn):
             pawn_moves()
