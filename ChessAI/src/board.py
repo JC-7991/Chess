@@ -157,7 +157,7 @@ class Board:
                             if self.squares[row][c].has_piece():
                                 break
                             if c == 3:
-                                pass
+                                piece.left_rook = left_rook
         
         if isinstance(piece, Pawn):
             pawn_moves()
