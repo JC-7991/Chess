@@ -26,7 +26,8 @@ class Board:
             self.check_promotion(piece, final)
 
         if isinstance(piece, King):
-            pass
+            if self.castling(initial, final):
+                pass
 
         piece.moved = True
         piece.clear_moves()
