@@ -27,7 +27,7 @@ class Board:
 
         if isinstance(piece, King):
             if self.castling(initial, final):
-                diff = final.col
+                diff = final.col - initial.col
 
         piece.moved = True
         piece.clear_moves()
