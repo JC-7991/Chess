@@ -25,6 +25,9 @@ class Board:
         if isinstance(piece, Pawn):
             self.check_promotion(piece, final)
 
+        if isinstance(piece, King):
+            pass
+
         piece.moved = True
         piece.clear_moves()
         self.last_move = move
