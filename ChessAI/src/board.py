@@ -148,7 +148,7 @@ class Board:
 
             if not piece.moved:
 
-                left_rook = self.squares[row][0]
+                left_rook = self.squares[row][0].piece
                 if isinstance(left_rook, Rook):
                     if not left_rook.moved:
                         for c in range(1, 4):
@@ -169,10 +169,10 @@ class Board:
                                 move = Move(initial, final)
                                 piece.add_move(move)
 
-                right_rook = self.squares[row][7]
+                right_rook = self.squares[row][7].piece
                 if isinstance(right_rook, Rook):
                     if not right_rook.moved:
-                        for c in range(1, 4):
+                        for c in range(5, 7):
                             
                             if self.squares[row][c].has_piece():
                                 break
