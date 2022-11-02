@@ -28,6 +28,7 @@ class Board:
         if isinstance(piece, King):
             if self.castling(initial, final):
                 diff = final.col - initial.col
+                rook = piece.left_rook if (diff < 0) else piece.right_rook
 
         piece.moved = True
         piece.clear_moves()
