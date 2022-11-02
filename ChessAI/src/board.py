@@ -37,7 +37,7 @@ class Board:
             self.squares[final.row][final.col].piece = Queen(piece.color)
     
     def castling(self, initial, final):
-        pass
+        return abs(initial.col)
 
     def calc_moves(self, piece, row, col):
 
@@ -155,7 +155,7 @@ class Board:
                             
                             if self.squares[row][c].has_piece():
                                 break
-                            
+
                             if c == 3:
 
                                 piece.left_rook = left_rook
@@ -182,13 +182,13 @@ class Board:
 
                                 piece.right_rook = right_rook
                                 
-                                initial = Square(row, 0)
-                                final = Square(row, 3)
+                                initial = Square(row, 7)
+                                final = Square(row, 5)
                                 move = Move(initial, final)
                                 right_rook.add_move(move)
 
                                 initial = Square(row, col)
-                                final = Square(row, 2)
+                                final = Square(row, 6)
                                 move = Move(initial, final)
                                 piece.add_move(move)
         
