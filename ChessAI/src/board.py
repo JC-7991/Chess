@@ -37,7 +37,7 @@ class Board:
             self.squares[final.row][final.col].piece = Queen(piece.color)
     
     def castling(self, initial, final):
-        return abs(initial.col)
+        return abs(initial.col - final.col) == 2
 
     def calc_moves(self, piece, row, col):
 
