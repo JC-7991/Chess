@@ -155,6 +155,7 @@ class Board:
                             
                             if self.squares[row][c].has_piece():
                                 break
+                            
                             if c == 3:
 
                                 piece.left_rook = left_rook
@@ -176,7 +177,8 @@ class Board:
                             
                             if self.squares[row][c].has_piece():
                                 break
-                            if c == 3:
+
+                            if c == 6:
 
                                 piece.right_rook = right_rook
                                 
