@@ -82,7 +82,7 @@ class Board:
                     if self.squares[possible_move_row][possible_move_col].has_enemy_piece(piece.color):
 
                         initial = Square(row, col)
-                        final_piece = self.squares[possible_move_row][possible_move_col]
+                        final_piece = self.squares[possible_move_row][possible_move_col].piece
                         final = Square(possible_move_row, possible_move_col, final_piece)
                         move = Move(initial, final)
                         piece.add_move(move)
