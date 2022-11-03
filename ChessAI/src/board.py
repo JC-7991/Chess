@@ -49,6 +49,7 @@ class Board:
 
     def in_check(self, piece, move):
         temp_board = copy.deepcopy(self)
+        
 
     def calc_moves(self, piece, row, col):
 
