@@ -126,11 +126,11 @@ class Board:
                         if self.squares[possible_move_row][possible_move_col].isempty():
                             piece.add_move(move)
 
-                        if self.squares[possible_move_row][possible_move_col].has_enemy_piece(piece.color):
+                        elif self.squares[possible_move_row][possible_move_col].has_enemy_piece(piece.color):
                             piece.add_move(move)
                             break
 
-                        if self.squares[possible_move_row][possible_move_col].has_team_piece(piece.color):
+                        elif self.squares[possible_move_row][possible_move_col].has_team_piece(piece.color):
                             break
 
                     else:
