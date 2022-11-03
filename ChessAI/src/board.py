@@ -1,3 +1,5 @@
+import copy
+
 from const import *
 from square import *
 from piece import *
@@ -46,7 +48,7 @@ class Board:
         return abs(initial.col - final.col) == 2
 
     def in_check(self, piece, move):
-        pass
+        temp_board = copy.deepcopy(self)
 
     def calc_moves(self, piece, row, col):
 
