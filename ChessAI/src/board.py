@@ -48,9 +48,13 @@ class Board:
         return abs(initial.col - final.col) == 2
 
     def in_check(self, piece, move):
+
         temp_piece = copy.deepcopy(piece)
         temp_board = copy.deepcopy(self)
         temp_board.move(temp_piece, move)
+
+        for row in range(ROWS):
+            pass
 
     def calc_moves(self, piece, row, col):
 
