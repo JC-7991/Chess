@@ -56,7 +56,7 @@ class Board:
         for row in range(ROWS):
             for col in range(COLS):
                 if temp_board.squares[row][col].has_enemy_piece(piece.color):
-                    pass
+                    p = temp_board.squares[row][col].piece
 
     def calc_moves(self, piece, row, col):
 
