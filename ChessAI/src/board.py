@@ -54,7 +54,8 @@ class Board:
         temp_board.move(temp_piece, move)
 
         for row in range(ROWS):
-            pass
+            for col in range(COLS):
+                pass
 
     def calc_moves(self, piece, row, col):
 
