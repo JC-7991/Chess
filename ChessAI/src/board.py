@@ -81,6 +81,9 @@ class Board:
                         initial = Square(row, col)
                         final = Square(possible_move_row, col)
                         move = Move(initial, final)
+
+                        if not self.in_check(piece, move):
+                            pass
                         
                         piece.add_move(move)
 
