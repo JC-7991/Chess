@@ -81,6 +81,7 @@ class Board:
                         initial = Square(row, col)
                         final = Square(possible_move_row, col)
                         move = Move(initial, final)
+                        
                         piece.add_move(move)
 
                     else:
