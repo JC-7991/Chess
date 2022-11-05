@@ -61,8 +61,7 @@ class Board:
                     temp_board.calc_moves(p, row, col)
                     for m in p.moves:
                         if isinstance(m.final.piece, King):
-                            return True
-                            
+                            return True                      
         return False
 
     def calc_moves(self, piece, row, col):
