@@ -77,7 +77,6 @@ class Game:
 
             for pos in [initial, final]:
                 color = (244, 247, 116) if (pos.row + pos.col) % 2 == 0 else (172, 195, 51)
-                #color = theme.trace.light if (pos.row + pos.col) % 2 == 0 else theme.trace.dark
                 rect = (pos.col * SQSIZE, pos.row * SQSIZE, SQSIZE, SQSIZE)
                 pygame.draw.rect(surface, color, rect)
 
