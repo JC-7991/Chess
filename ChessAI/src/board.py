@@ -65,7 +65,7 @@ class Board:
                                             
         return False
 
-    def calc_moves(self, piece, row, col):
+    def calc_moves(self, piece, row, col, bool = True):
 
         def pawn_moves():
 
