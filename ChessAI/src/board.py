@@ -83,9 +83,7 @@ class Board:
                         move = Move(initial, final)
 
                         if not self.in_check(piece, move):
-                            pass
-
-                        piece.add_move(move)
+                            piece.add_move(move)
 
                     else:
                         break
